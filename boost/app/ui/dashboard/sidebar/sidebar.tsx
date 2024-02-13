@@ -1,6 +1,7 @@
 import Menulink from "./menulink/menulink";
 import styles from "./sidebar.module.css";
 import { MdDashboard, MdShoppingBag, MdAttachMoney, MdDescription, MdInsertChart, MdOutlineSettings, MdSupervisedUserCircle, MdHelpCenter, MdLogout } from "react-icons/md";
+import Image from "../../image";
 
 
 const menuItems = [
@@ -69,7 +70,14 @@ interface Menulink{
 const Sidebar = () => {
   return (
     <div className={styles.container}>
-      <ul>
+      <div className={styles.user}>
+        <Image src = {"/pngtree-user-vector-avatar-png-image_1541962.jpg"} alt={"user-image"} />
+        <div className={styles.userDetails}>
+          <span className={styles.userName}>John Doe</span>
+          <span className={styles.userTitle}>Admin</span>
+        </div>
+      </div>
+      <ul className={styles.list}>
         {menuItems.map(cat=>(<li key={cat.title}>
           <span className={styles.cat}>{cat.title}</span>
           {cat.list.map((item)=>(<Menulink item = {item} key= {item.title}/>))}
