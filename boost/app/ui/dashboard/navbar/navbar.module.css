@@ -24,3 +24,12 @@
   padding: 10px;
   border-radius: 10px;
 }
+.input{
+  background-color: transparent;
+  border:none;
+  color:var(--text);
+}
+.icons{
+  gap:20px;
+  display: flex;
+}

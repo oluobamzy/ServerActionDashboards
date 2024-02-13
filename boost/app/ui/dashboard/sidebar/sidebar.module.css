@@ -18,3 +18,19 @@
   font-size: 13px;
   margin: 10px 0;
 }
+.signout{
+  padding:20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin:5px 0;
+  border-radius: 10px;
+  cursor:pointer;
+  background: none;
+  border:none;
+  color:white;
+  width: 100%;
+}
+.signout:hover{
+  background-color: #2e374a;
+}

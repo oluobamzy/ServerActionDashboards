@@ -55,10 +55,10 @@ const menuItems = [
         path: "/dashboard/help",
         icon: < MdHelpCenter/>// Add missing object key before "title" property
       },
-      { title: "Sign out", // Add missing object key before "title" property
-        path: "/signout",
-        icon: <MdLogout />
-      }
+      // { title: "Sign out", // Add missing object key before "title" property
+      //   path: "/signout",
+      //   icon: <MdLogout />
+      // }
     ]
     }
 ];
@@ -83,6 +83,10 @@ const Sidebar = () => {
           {cat.list.map((item)=>(<Menulink item = {item} key= {item.title}/>))}
           </li>))}
       </ul>
+      <button className={styles.signout}>
+        <MdLogout />
+        <span>Sign out</span>
+      </button>
     </div>
   )
 }
