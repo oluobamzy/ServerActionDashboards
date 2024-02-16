@@ -1,4 +1,4 @@
- import styles from './card.module.scss';
+ import styles from './card.module.css';
  import { MdSupervisedUserCircle } from 'react-icons/md';
  const Card = () => {
   return (
