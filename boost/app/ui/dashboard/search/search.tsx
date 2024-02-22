@@ -1,7 +1,7 @@
 import styles from './search.module.css';
 import { MdSearch } from 'react-icons/md';
 
- const Search = ({placeholder}:{placeholder:string}) => {
+ const Search = ({placeholder, className}:{placeholder:string, className:string}) => {
   return (
     <div className={styles.container}>
       <MdSearch />
